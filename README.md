@@ -30,6 +30,8 @@ cd service
 cargo run
 ```
 3. Inject a DLL:
+
+Put your DLL file in [service/assets/libraries](service/assets/libraries), then:
 ```sh
 cd client
 cargo run -- --process Notepad.exe --library test.dll --window-class Notepad
