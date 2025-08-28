@@ -23,6 +23,7 @@ Proof-of-Concept server-assisted DLL manual mapping written in Rust
 ```sh
 git clone https://github.com/eliasmoflag/net-syringe.git
 cd net-syringe
+cargo build
 ```
 2. Start the server:
 ```sh
