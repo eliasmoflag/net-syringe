@@ -1,4 +1,4 @@
-use axum::{Router, routing::get};
+use axum::{Router, http::StatusCode, routing::get};
 use tokio::net::TcpListener;
 use tower_http::trace::TraceLayer;
 use tracing::info;
@@ -30,7 +30,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         .init();
 
     let app = Router::new()
-        .route("/", get(|| async { "online" }))
+        .route("/", get(|| async { StatusCode::OK }))
         .route(
             "/libraries/{library_id}",
             get(routes::libraries::get_library),
