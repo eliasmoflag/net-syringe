@@ -8,6 +8,7 @@ Proof-of-Concept server-assisted DLL manual mapping written in Rust
 - [x] Security cookie initialization
 - [x] Erase PE headers
 - [x] Execution via `WH_GETMESSAGE` hook
+- [x] **Extensible:** `ProcessTrait` interface to implement your own process operations (read, write, allocate memory, etc.)
 - [ ] Exception support
 - [ ] TLS support
 - [ ] 32-bit support
